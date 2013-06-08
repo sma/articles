@@ -1,9 +1,19 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
-<div class="post">
-{{ content }}
-</div>
+<section class="container">
+	<h1 class="page-header">{{ page.title }}</h1>
+	{{ content }}
+</section>
+<footer>
+	<address class="container" style="position: relative">
+		<table style="width: 100%">
+			<tr>
+				<td>Written by Stefan Matthias Aust. Last updated on {{ page.date | date_to_string }}.</td>
+				<td><g:plusone></g:plusone></td>
+				<td align="right"><a href="{{ site.baseurl }}/">&larr; Back to overview</a></td>
+			</tr>
+		</table>
+	</address>
+</footer>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>

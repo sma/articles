@@ -1,13 +1,22 @@
 ---
 layout: default
-title: Braindump["sma"]
+title: Artikelübersicht
 ---
-
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
+<div class="container">
+  <header class="subhead">
+    <h1 style="letter-spacing: -2px">braindump(“sma”)</h1>
+    <p class="lead"><i>Dinge und Sachen, die ich mal geschrieben habe.</i></p>
+  </header>
+  <section>
+    <ul class="articles">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+  	  <li><small>{{ post.date | date_to_string }}</small><br><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
-  </ul>
+    </ul>
+  </section>
 </div>
+<footer>
+  <div class="container">
+    <address><p>&copy;2013 Stefan Matthias Aust.<br><a href="https://plus.google.com/103493864228790779294/posts">G+</a></p></address>
+  </div>
+</footer>
