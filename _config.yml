@@ -1,3 +1,4 @@
 name: Braindump["sma"]
+baseurl: /articles
 pygments: true
 safe: true
