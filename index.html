@@ -10,7 +10,13 @@ title: Artikelübersicht
   <section>
     <ul class="articles">
     {% for post in site.posts %}
-  	  <li><small>{{ post.date | date_to_string }}</small><br><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+  	  <li>
+  	  	<small>{{ post.date | date_to_long_string }}</small><br>
+  	  	<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><br>
+  	  	{% for tag in post.tags %}
+  	  	<small style="font-size:13px; border:1px solid #ddd; border-radius: 3px; padding: 1px; text-transform:uppercase">{{ tag }}</small>
+  	  	{% endfor %}
+  	  </li>
     {% endfor %}
     </ul>
   </section>
