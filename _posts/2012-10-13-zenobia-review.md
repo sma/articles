@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Zenobia Review
-tags: [rpg, review, 43AD]
+tags: [rpg, review, zenobia, 43ad]
 ---
 Weil ich die Idee von Rollenspiel zur Römerzeit spannend fand, habe ich eben mal [Zenobia 2](http://zozer.weebly.com/free-rpgs.html), ein kostenloses Rollenspiel von 2004 (ursprünglich 1999), überflogen. Das PDF hat 226 Seiten in einfachstem Layout. Bilder sind Hobby-Niveau und komischerweise zum Teil sehr verpixelt.
 
