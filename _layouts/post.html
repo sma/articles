@@ -2,7 +2,10 @@
 layout: default
 ---
 <section class="container">
-	<h1 class="page-header">{{ page.title }}</h1>
+	<h1 class="page-header">
+		{{ page.title }}
+		<small class="edit"><a href="https://github.com/sma/articles/edit/gh-pages/{{ page.path }}">Bearbeiten</a></small>
+	</h1>
 	{{ content }}
 </section>
 <footer>
